@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Project Timeline</title>
+  <meta name="description" content="Vibe Coded Tools for different use.">
+  <meta name="theme-color" content="#e9e9e7">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500&family=IBM+Plex+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap&text=0123456789">
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <main class="page">
+
+    <header class="hero grid-marks">
+      <h1 class="title">
+        <span class="title-line">Project</span>
+        <span class="title-line title-line--right">Timeline</span>
+      </h1>
+      <div class="hero-meta">
+        <span class="badge" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="12" cy="12" r="10"/><ellipse cx="12" cy="12" rx="4.5" ry="10"/><path d="M2 12h20M4 6.5h16M4 17.5h16"/></svg>
+        </span>
+        <span class="badge badge--text" aria-hidden="true">GH</span>
+        <span class="pixel" aria-hidden="true">2026</span>
+      </div>
+    </header>
+
+    <p class="lead grid-marks">Vibe Coded Tools for different use.</p>
+
+    <section class="projects" aria-label="Projekte">
+      <div class="section-head">
+        <span>/ Projects</span>
+        <span class="counter" aria-live="polite"><b id="current">01</b> / <span id="total">06</span></span>
+      </div>
+
+      <div class="frame">
+        <div class="frame-bar">
+          <button class="nav-btn" data-dir="-1" aria-label="Vorheriges Projekt">&larr;</button>
+          <span>[ FIG. 1 ]</span>
+          <button class="nav-btn" data-dir="1" aria-label="Nächstes Projekt">&rarr;</button>
+        </div>
+
+        <!--
+          Neue Projekte: einfach eine <a class="card"> kopieren.
+          href  -> GitHub-Repo, img -> Hintergrundbild (SVG/JPG/WebP), data-date -> Label auf der Timeline.
+        -->
+        <div class="track" tabindex="0" aria-roledescription="carousel">
+          <a class="card" href="https://github.com/schwaflo" target="_blank" rel="noopener" data-date="2026.01">
+            <div class="card-media"><img src="img/01.svg" alt="" width="560" height="640" draggable="false" decoding="async"></div>
+            <span class="card-tag">[ 01 ]</span>
+            <div class="card-body">
+              <h2>Project One</h2>
+              <p>Kurze Beschreibung, was dieses Tool macht.</p>
+              <span class="card-cta">GitHub <i>&#8599;</i></span>
+            </div>
+          </a>
+          <a class="card" href="https://github.com/schwaflo" target="_blank" rel="noopener" data-date="2026.03">
+            <div class="card-media"><img src="img/02.svg" alt="" width="560" height="640" draggable="false" decoding="async"></div>
+            <span class="card-tag">[ 02 ]</span>
+            <div class="card-body">
+              <h2>Project Two</h2>
+              <p>Kurze Beschreibung, was dieses Tool macht.</p>
+              <span class="card-cta">GitHub <i>&#8599;</i></span>
+            </div>
+          </a>
+          <a class="card" href="https://github.com/schwaflo" target="_blank" rel="noopener" data-date="2026.05">
+            <div class="card-media"><img src="img/03.svg" alt="" width="560" height="640" draggable="false" decoding="async" loading="lazy"></div>
+            <span class="card-tag">[ 03 ]</span>
+            <div class="card-body">
+              <h2>Project Three</h2>
+              <p>Kurze Beschreibung, was dieses Tool macht.</p>
+              <span class="card-cta">GitHub <i>&#8599;</i></span>
+            </div>
+          </a>
+          <a class="card" href="https://github.com/schwaflo" target="_blank" rel="noopener" data-date="2026.07">
+            <div class="card-media"><img src="img/04.svg" alt="" width="560" height="640" draggable="false" decoding="async" loading="lazy"></div>
+            <span class="card-tag">[ 04 ]</span>
+            <div class="card-body">
+              <h2>Project Four</h2>
+              <p>Kurze Beschreibung, was dieses Tool macht.</p>
+              <span class="card-cta">GitHub <i>&#8599;</i></span>
+            </div>
+          </a>
+          <a class="card" href="https://github.com/schwaflo" target="_blank" rel="noopener" data-date="2026.09">
+            <div class="card-media"><img src="img/05.svg" alt="" width="560" height="640" draggable="false" decoding="async" loading="lazy"></div>
+            <span class="card-tag">[ 05 ]</span>
+            <div class="card-body">
+              <h2>Project Five</h2>
+              <p>Kurze Beschreibung, was dieses Tool macht.</p>
+              <span class="card-cta">GitHub <i>&#8599;</i></span>
+            </div>
+          </a>
+          <a class="card" href="https://github.com/schwaflo" target="_blank" rel="noopener" data-date="2026.11">
+            <div class="card-media"><img src="img/06.svg" alt="" width="560" height="640" draggable="false" decoding="async" loading="lazy"></div>
+            <span class="card-tag">[ 06 ]</span>
+            <div class="card-body">
+              <h2>Project Six</h2>
+              <p>Kurze Beschreibung, was dieses Tool macht.</p>
+              <span class="card-cta">GitHub <i>&#8599;</i></span>
+            </div>
+          </a>
+        </div>
+
+        <div class="timeline" aria-hidden="false">
+          <div class="timeline-rail"><span class="timeline-fill"></span></div>
+          <ol class="timeline-ticks"></ol>
+        </div>
+      </div>
+
+      <p class="hint">Swipe &middot; Drag &middot; Trackpad &middot; &larr; &rarr;</p>
+    </section>
+
+  </main>
+</body>
+</html>
